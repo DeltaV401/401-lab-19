@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --verbose --coverage",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nmq/q": "^1.0.5",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.3",
+    "socket.io": "^2.3.0",
+    "uuid": "^3.3.3"
+  }
+}
