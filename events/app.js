@@ -8,6 +8,7 @@ const uuid = require('uuid');
 
 require('./logger');
 require('./network-logger');
+require('./q-logger');
 
 const alterFile = (file) => {
   return readFile(file)
