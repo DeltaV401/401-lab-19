@@ -1,11 +1,15 @@
-const socketIoClient = require('socket.io-client');
+const Q = require('@nmq/q/client');
 
-const URL = process.env.URL || 'http://localhost:3000';
+const network = new Q('network');
 
-const client = socketIoClient.connect(URL);
+network.subscribe('attacker', payload => {
+  console.warn(`FASTEN DOWN THE HATCHES! MAN THE SAILS! WE'RE UNDER ATTACK BY ${payload}!`);
+});
 
-console.log(`Listening through ${URL}.`);
+network.subscribe('connection', payload => {
+  console.log('We arrrrr connected.', payload);
+});
 
-client.on('chat', data => {
-  console.log('CHAT', data.toString());
+network.subscribe('disconnected', payload => {
+  console.log(`They've had a wee bit too much rum.`, payload);
 });
