@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nmq/q": "^1.0.5",
     "eslint": "^6.5.1",
     "nodemon": "^1.19.3",
     "socket.io-client": "^2.3.0"

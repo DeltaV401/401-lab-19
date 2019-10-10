@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nmq/q": "^1.0.5",
     "eslint": "^6.5.1",
     "jest": "^24.9.0",
     "nodemon": "^1.19.3",
